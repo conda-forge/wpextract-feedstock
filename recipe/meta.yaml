@@ -1,5 +1,5 @@
 {% set name = "wpextract" %}
-{% set version = "1.0.1" %}
+{% set version = "1.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wpextract-{{ version }}.tar.gz
-  sha256: e07425fa84bea3d93702a9bfbca696bba43464906f3043d30476a98903e7eba3
+  sha256: c0cce2f529ddb88db6fdc2e44b967ed5d258f98144cf3938a53896ae86eee555
 
 build:
   entry_points:
