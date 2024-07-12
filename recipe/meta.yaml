@@ -45,9 +45,9 @@ test:
 
 about:
   summary: Create datasets from WordPress sites
-  home: https://gatenlp.github.io/wpextract/
+  home: https://wpextract.readthedocs.io
   dev_url: https://github.com/GateNLP/wpextract
-  doc_url: https://gatenlp.github.io/wpextract/
+  doc_url: https://wpextract.readthedocs.io
   license: Apache-2.0
   license_file:
     - NOTICE
