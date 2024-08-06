@@ -3,7 +3,7 @@ About wpextract-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/wpextract-feedstock/blob/main/LICENSE.txt)
 
-Home: https://gatenlp.github.io/wpextract/
+Home: https://wpextract.readthedocs.io
 
 Package license: Apache-2.0
 
@@ -11,7 +11,7 @@ Summary: Create datasets from WordPress sites
 
 Development: https://github.com/GateNLP/wpextract
 
-Documentation: https://gatenlp.github.io/wpextract/
+Documentation: https://wpextract.readthedocs.io
 
 Current build status
 ====================
