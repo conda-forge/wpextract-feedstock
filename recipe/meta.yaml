@@ -6,7 +6,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/wpextract-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/wpextract-{{ version }}.tar.gz
   sha256: 19f3bc3d45b46a7e9190cab7a6cd55a56c9924c5cc52b01a31d9648919f55d0b
 
 build:
@@ -14,15 +14,15 @@ build:
     - wpextract = wpextract.cli:cli
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python >=3.9,<3.13
+    - python {{ python_min }}
     - poetry-core >=1.0.0
     - pip
   run:
-    - python >=3.9.0,<3.13
+    - python >={{ python_min }},<3.13
     - beautifulsoup4 >=4.12.0
     - langcodes >=3.3.0
     - lxml >=5.0.0
@@ -42,6 +42,7 @@ test:
     - wpextract --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   summary: Create datasets from WordPress sites
