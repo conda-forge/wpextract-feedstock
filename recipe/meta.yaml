@@ -19,10 +19,10 @@ build:
 requirements:
   host:
     - python {{ python_min }}
-    - poetry-core >=1.0.0
+    - poetry-core >=2.0.0
     - pip
   run:
-    - python >={{ python_min }},<3.13
+    - python >={{ python_min }}
     - beautifulsoup4 >=4.12.0
     - langcodes >=3.3.0
     - lxml >=5.0.0
